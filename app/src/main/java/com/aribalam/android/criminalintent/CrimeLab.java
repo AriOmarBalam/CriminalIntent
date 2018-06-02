@@ -1,7 +1,6 @@
 package com.aribalam.android.criminalintent;
 
 import android.content.Context;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -27,7 +26,7 @@ public class CrimeLab {
         mCrimes = new ArrayList<>();
         for (int i = 1; i <= 100; i++){
             Crime crime = new Crime();
-            crime.setmTitle("Crimen # " + 1);
+            crime.setmTitle("Crimen # " + i);
             crime.setmSolved(i % 2 == 0);
             mCrimes.add(crime);
         }
